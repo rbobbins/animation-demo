@@ -40,7 +40,15 @@ static NSString * const kBookCellIdentifier = @"kBookCellIdentifier";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     BookCell *cell = (id)[tableView dequeueReusableCellWithIdentifier:kBookCellIdentifier];
     cell.bookTitleLabel.text = self.bookTitles[indexPath.row];
+    cell.backgroundView = nil;
+    cell.backgroundColor = [UIColor clearColor];
     return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"================> %@", indexPath);
 }
 
 #pragma mark - Private

@@ -21,6 +21,7 @@
 		5AAB593B1A7D91D4004C066F /* BooksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AAB59391A7D91D4004C066F /* BooksViewController.xib */; };
 		5AAB593F1A7D95AB004C066F /* BookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB593D1A7D95AB004C066F /* BookCell.m */; };
 		5AAB59401A7D95AB004C066F /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AAB593E1A7D95AB004C066F /* BookCell.xib */; };
+		5AE780FE1A7D97CC00310B15 /* vertical_bookshelf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AE780FD1A7D97CC00310B15 /* vertical_bookshelf.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		5AAB593C1A7D95AB004C066F /* BookCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookCell.h; sourceTree = "<group>"; };
 		5AAB593D1A7D95AB004C066F /* BookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookCell.m; sourceTree = "<group>"; };
 		5AAB593E1A7D95AB004C066F /* BookCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
+		5AE780FD1A7D97CC00310B15 /* vertical_bookshelf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vertical_bookshelf.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		5A5672761A7B5C8C00BC24ED /* AnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5AE780FD1A7D97CC00310B15 /* vertical_bookshelf.jpg */,
 				5A56727B1A7B5C8C00BC24ED /* AppDelegate.h */,
 				5A56727C1A7B5C8C00BC24ED /* AppDelegate.m */,
 				5A5672841A7B5C8C00BC24ED /* Images.xcassets */,
@@ -229,6 +232,7 @@
 				5A647D701A7D873B00AB9136 /* ViewController.xib in Resources */,
 				5A5672881A7B5C8C00BC24ED /* LaunchScreen.xib in Resources */,
 				5A6FE15A1A7D8EE700FA739B /* MenuViewController.xib in Resources */,
+				5AE780FE1A7D97CC00310B15 /* vertical_bookshelf.jpg in Resources */,
 				5A5672851A7B5C8C00BC24ED /* Images.xcassets in Resources */,
 				5A5673671A7B5D6D00BC24ED /* selfie.jpg in Resources */,
 				5AAB59401A7D95AB004C066F /* BookCell.xib in Resources */,
