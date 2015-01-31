@@ -8,6 +8,7 @@
 
 #import "MenuViewController.h"
 #import "ViewController.h"
+#import "BooksViewController.h"
 
 @interface MenuViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -30,7 +31,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return 2;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
@@ -41,6 +42,8 @@
         case 0:
             cell.textLabel.text = @"Page Fold";
             break;
+        case 1:
+            cell.textLabel.text = @"Cell Fold";
         default:
             break;
     }
@@ -52,9 +55,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    UIViewController *viewController;
     if (indexPath.row == 0) {
-        ViewController *viewController = [[ViewController alloc] init];
-        [self.navigationController pushViewController:viewController animated:YES];
+        viewController = [[ViewController alloc] init];
+    } else if (indexPath.row == 1) {
+        viewController = [[BooksViewController alloc] init];
     }
+    [self.navigationController pushViewController:viewController animated:YES];
+
 }
 @end

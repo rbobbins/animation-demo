@@ -17,6 +17,8 @@
 		5A647D701A7D873B00AB9136 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A647D6F1A7D873B00AB9136 /* ViewController.xib */; };
 		5A6FE1591A7D8EE700FA739B /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6FE1571A7D8EE700FA739B /* MenuViewController.m */; };
 		5A6FE15A1A7D8EE700FA739B /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A6FE1581A7D8EE700FA739B /* MenuViewController.xib */; };
+		5AAB593A1A7D91D4004C066F /* BooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB59381A7D91D4004C066F /* BooksViewController.m */; };
+		5AAB593B1A7D91D4004C066F /* BooksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AAB59391A7D91D4004C066F /* BooksViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,9 @@
 		5A6FE1561A7D8EE700FA739B /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		5A6FE1571A7D8EE700FA739B /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		5A6FE1581A7D8EE700FA739B /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		5AAB59371A7D91D4004C066F /* BooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooksViewController.h; sourceTree = "<group>"; };
+		5AAB59381A7D91D4004C066F /* BooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooksViewController.m; sourceTree = "<group>"; };
+		5AAB59391A7D91D4004C066F /* BooksViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BooksViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +105,9 @@
 				5A56727E1A7B5C8C00BC24ED /* ViewController.h */,
 				5A56727F1A7B5C8C00BC24ED /* ViewController.m */,
 				5A647D6F1A7D873B00AB9136 /* ViewController.xib */,
+				5AAB59371A7D91D4004C066F /* BooksViewController.h */,
+				5AAB59381A7D91D4004C066F /* BooksViewController.m */,
+				5AAB59391A7D91D4004C066F /* BooksViewController.xib */,
 			);
 			path = AnimationDemo;
 			sourceTree = "<group>";
@@ -215,6 +223,7 @@
 				5A6FE15A1A7D8EE700FA739B /* MenuViewController.xib in Resources */,
 				5A5672851A7B5C8C00BC24ED /* Images.xcassets in Resources */,
 				5A5673671A7B5D6D00BC24ED /* selfie.jpg in Resources */,
+				5AAB593B1A7D91D4004C066F /* BooksViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A5672801A7B5C8C00BC24ED /* ViewController.m in Sources */,
+				5AAB593A1A7D91D4004C066F /* BooksViewController.m in Sources */,
 				5A56727D1A7B5C8C00BC24ED /* AppDelegate.m in Sources */,
 				5A56727A1A7B5C8C00BC24ED /* main.m in Sources */,
 				5A6FE1591A7D8EE700FA739B /* MenuViewController.m in Sources */,
