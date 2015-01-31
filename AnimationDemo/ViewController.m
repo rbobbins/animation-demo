@@ -27,6 +27,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"Page Fold";
+    
     [self prepareSplitImage];
 
 }

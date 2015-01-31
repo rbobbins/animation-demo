@@ -15,6 +15,8 @@
 		5A5672941A7B5C8C00BC24ED /* AnimationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5672931A7B5C8C00BC24ED /* AnimationDemoTests.m */; };
 		5A5673671A7B5D6D00BC24ED /* selfie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A5673661A7B5D6D00BC24ED /* selfie.jpg */; };
 		5A647D701A7D873B00AB9136 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A647D6F1A7D873B00AB9136 /* ViewController.xib */; };
+		5A6FE1591A7D8EE700FA739B /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6FE1571A7D8EE700FA739B /* MenuViewController.m */; };
+		5A6FE15A1A7D8EE700FA739B /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A6FE1581A7D8EE700FA739B /* MenuViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,9 @@
 		5A5672931A7B5C8C00BC24ED /* AnimationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationDemoTests.m; sourceTree = "<group>"; };
 		5A5673661A7B5D6D00BC24ED /* selfie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = selfie.jpg; sourceTree = "<group>"; };
 		5A647D6F1A7D873B00AB9136 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		5A6FE1561A7D8EE700FA739B /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		5A6FE1571A7D8EE700FA739B /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		5A6FE1581A7D8EE700FA739B /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,15 +88,18 @@
 		5A5672761A7B5C8C00BC24ED /* AnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
-				5A5673661A7B5D6D00BC24ED /* selfie.jpg */,
 				5A56727B1A7B5C8C00BC24ED /* AppDelegate.h */,
 				5A56727C1A7B5C8C00BC24ED /* AppDelegate.m */,
+				5A5672841A7B5C8C00BC24ED /* Images.xcassets */,
+				5A5672861A7B5C8C00BC24ED /* LaunchScreen.xib */,
+				5A6FE1561A7D8EE700FA739B /* MenuViewController.h */,
+				5A6FE1571A7D8EE700FA739B /* MenuViewController.m */,
+				5A6FE1581A7D8EE700FA739B /* MenuViewController.xib */,
+				5A5673661A7B5D6D00BC24ED /* selfie.jpg */,
+				5A5672771A7B5C8C00BC24ED /* Supporting Files */,
 				5A56727E1A7B5C8C00BC24ED /* ViewController.h */,
 				5A56727F1A7B5C8C00BC24ED /* ViewController.m */,
 				5A647D6F1A7D873B00AB9136 /* ViewController.xib */,
-				5A5672841A7B5C8C00BC24ED /* Images.xcassets */,
-				5A5672861A7B5C8C00BC24ED /* LaunchScreen.xib */,
-				5A5672771A7B5C8C00BC24ED /* Supporting Files */,
 			);
 			path = AnimationDemo;
 			sourceTree = "<group>";
@@ -204,6 +212,7 @@
 			files = (
 				5A647D701A7D873B00AB9136 /* ViewController.xib in Resources */,
 				5A5672881A7B5C8C00BC24ED /* LaunchScreen.xib in Resources */,
+				5A6FE15A1A7D8EE700FA739B /* MenuViewController.xib in Resources */,
 				5A5672851A7B5C8C00BC24ED /* Images.xcassets in Resources */,
 				5A5673671A7B5D6D00BC24ED /* selfie.jpg in Resources */,
 			);
@@ -226,6 +235,7 @@
 				5A5672801A7B5C8C00BC24ED /* ViewController.m in Sources */,
 				5A56727D1A7B5C8C00BC24ED /* AppDelegate.m in Sources */,
 				5A56727A1A7B5C8C00BC24ED /* main.m in Sources */,
+				5A6FE1591A7D8EE700FA739B /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
