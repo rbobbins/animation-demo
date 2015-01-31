@@ -7,6 +7,7 @@
 //
 
 #import "BooksViewController.h"
+#import "BookCell.h"
 
 static NSString * const kBookCellIdentifier = @"kBookCellIdentifier";
 
@@ -21,7 +22,9 @@ static NSString * const kBookCellIdentifier = @"kBookCellIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kBookCellIdentifier];
+    UINib *cellNib = [UINib nibWithNibName:NSStringFromClass([BookCell class]) bundle:nil];
+    [self.tableView registerNib:cellNib
+         forCellReuseIdentifier:kBookCellIdentifier];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,8 +38,8 @@ static NSString * const kBookCellIdentifier = @"kBookCellIdentifier";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kBookCellIdentifier];
-    cell.textLabel.text = self.bookTitles[indexPath.row];
+    BookCell *cell = (id)[tableView dequeueReusableCellWithIdentifier:kBookCellIdentifier];
+    cell.bookTitleLabel.text = self.bookTitles[indexPath.row];
     return cell;
 }
 
