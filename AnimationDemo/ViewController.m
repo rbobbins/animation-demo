@@ -50,12 +50,24 @@
     
     self.topHalfView.layer.transform = startingTransform;
     self.bottomHalfView.layer.transform = startingTransform;
+    
+    CAGradientLayer *topShadowLayer = [CAGradientLayer layer];
+    topShadowLayer.colors = @[((id)[UIColor clearColor].CGColor), ((id)[UIColor blackColor].CGColor) ];
+    topShadowLayer.frame = self.topHalfView.bounds;
+    [self.topHalfView.layer addSublayer:topShadowLayer];
+
+    CAGradientLayer *bottomShadowLayer = [CAGradientLayer layer];
+    bottomShadowLayer.colors = @[((id)[UIColor blackColor].CGColor), ((id)[UIColor clearColor].CGColor) ];
+    bottomShadowLayer.frame = self.bottomHalfView.bounds;
+    [self.bottomHalfView.layer addSublayer:bottomShadowLayer];
 
     [CATransaction begin];
-    [CATransaction setAnimationDuration:10.0];
+    [CATransaction setAnimationDuration:0.5];
     [CATransaction setCompletionBlock:^{
         self.topHalfView.frame = endingTopFrame;
         self.bottomHalfView.frame = endingBottomFrame;
+        [topShadowLayer removeFromSuperlayer];
+        [bottomShadowLayer removeFromSuperlayer];
     }];
     
     CABasicAnimation *topRotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.x"];
@@ -72,15 +84,21 @@
     [self.bottomHalfView.layer addAnimation:bottomRotationAnimation forKey:nil];
     
     CABasicAnimation *bottomTranslationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.translation.y"];
-    bottomTranslationAnimation.fromValue = @(0);
+    bottomTranslationAnimation.fromValue = @(CGRectGetMinY(self.topHalfView.frame));
     bottomTranslationAnimation.toValue = @(2 * self.bottomHalfView.frame.size.height);
     bottomTranslationAnimation.fillMode = kCAFillModeForwards;
     
     //TODO: figure out a more precise timing function
-    CAMediaTimingFunction *timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
-    timingFunction = [CAMediaTimingFunction functionWithControlPoints:0.005 :0.0 :0.58 :1.0];
-    bottomTranslationAnimation.timingFunction = timingFunction;
+    bottomTranslationAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];;
     [self.bottomHalfView.layer addAnimation:bottomTranslationAnimation forKey:nil];
+    
+    
+    CABasicAnimation *opacityAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    opacityAnimation.fromValue = @(1.0);
+    opacityAnimation.toValue = @(0.0);
+    [topShadowLayer addAnimation:opacityAnimation forKey:nil];
+    [bottomShadowLayer addAnimation:opacityAnimation forKey:nil];
+    
     [CATransaction commit];
     
 }
@@ -89,8 +107,8 @@
     UIImage *image = [UIImage imageNamed:@"selfie.jpg"];
     CGRect imageFrame = CGRectMake(self.animationContainer.frame.origin.x,
                                                self.animationContainer.frame.origin.y,
-                                               MIN(image.size.width, self.view.frame.size.width),
-                                               MIN(image.size.height, self.view.frame.size.height));
+                                               MIN(image.size.width, self.animationContainer.frame.size.width),
+                                               MIN(image.size.height, self.animationContainer.frame.size.height));
     self.animationContainer.frame = imageFrame;
     
     UIGraphicsBeginImageContext(image.size);
