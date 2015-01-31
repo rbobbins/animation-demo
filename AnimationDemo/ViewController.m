@@ -16,6 +16,14 @@
 
 @implementation ViewController
 
+- (instancetype)init {
+    self = [super initWithNibName:NSStringFromClass([self class]) bundle:nil];
+    if (self) {
+        //
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

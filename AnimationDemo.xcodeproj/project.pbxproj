@@ -10,11 +10,11 @@
 		5A56727A1A7B5C8C00BC24ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5672791A7B5C8C00BC24ED /* main.m */; };
 		5A56727D1A7B5C8C00BC24ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A56727C1A7B5C8C00BC24ED /* AppDelegate.m */; };
 		5A5672801A7B5C8C00BC24ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A56727F1A7B5C8C00BC24ED /* ViewController.m */; };
-		5A5672831A7B5C8C00BC24ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A5672811A7B5C8C00BC24ED /* Main.storyboard */; };
 		5A5672851A7B5C8C00BC24ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A5672841A7B5C8C00BC24ED /* Images.xcassets */; };
 		5A5672881A7B5C8C00BC24ED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A5672861A7B5C8C00BC24ED /* LaunchScreen.xib */; };
 		5A5672941A7B5C8C00BC24ED /* AnimationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5672931A7B5C8C00BC24ED /* AnimationDemoTests.m */; };
 		5A5673671A7B5D6D00BC24ED /* selfie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A5673661A7B5D6D00BC24ED /* selfie.jpg */; };
+		5A647D701A7D873B00AB9136 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A647D6F1A7D873B00AB9136 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +35,13 @@
 		5A56727C1A7B5C8C00BC24ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5A56727E1A7B5C8C00BC24ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5A56727F1A7B5C8C00BC24ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5A5672821A7B5C8C00BC24ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A5672841A7B5C8C00BC24ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5A5672871A7B5C8C00BC24ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5A56728D1A7B5C8C00BC24ED /* AnimationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A5672921A7B5C8C00BC24ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A5672931A7B5C8C00BC24ED /* AnimationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationDemoTests.m; sourceTree = "<group>"; };
 		5A5673661A7B5D6D00BC24ED /* selfie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = selfie.jpg; sourceTree = "<group>"; };
+		5A647D6F1A7D873B00AB9136 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +88,7 @@
 				5A56727C1A7B5C8C00BC24ED /* AppDelegate.m */,
 				5A56727E1A7B5C8C00BC24ED /* ViewController.h */,
 				5A56727F1A7B5C8C00BC24ED /* ViewController.m */,
-				5A5672811A7B5C8C00BC24ED /* Main.storyboard */,
+				5A647D6F1A7D873B00AB9136 /* ViewController.xib */,
 				5A5672841A7B5C8C00BC24ED /* Images.xcassets */,
 				5A5672861A7B5C8C00BC24ED /* LaunchScreen.xib */,
 				5A5672771A7B5C8C00BC24ED /* Supporting Files */,
@@ -202,7 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A5672831A7B5C8C00BC24ED /* Main.storyboard in Resources */,
+				5A647D701A7D873B00AB9136 /* ViewController.xib in Resources */,
 				5A5672881A7B5C8C00BC24ED /* LaunchScreen.xib in Resources */,
 				5A5672851A7B5C8C00BC24ED /* Images.xcassets in Resources */,
 				5A5673671A7B5D6D00BC24ED /* selfie.jpg in Resources */,
@@ -248,14 +248,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5A5672811A7B5C8C00BC24ED /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5A5672821A7B5C8C00BC24ED /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5A5672861A7B5C8C00BC24ED /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -352,6 +344,7 @@
 				INFOPLIST_FILE = AnimationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -362,6 +355,7 @@
 				INFOPLIST_FILE = AnimationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -418,6 +412,7 @@
 				5A5672991A7B5C8C00BC24ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A56729A1A7B5C8C00BC24ED /* Build configuration list for PBXNativeTarget "AnimationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +421,7 @@
 				5A56729C1A7B5C8C00BC24ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

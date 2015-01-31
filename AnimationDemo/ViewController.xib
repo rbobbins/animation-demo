@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="animationContainer" destination="1Jq-r5-hYR" id="0ih-v1-s64"/>
+                <outlet property="view" destination="t4W-6e-zqc" id="KMW-cS-0Kc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="t4W-6e-zqc">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Jq-r5-hYR" userLabel="Animation Container">
+                    <rect key="frame" x="0.0" y="72" width="600" height="528"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awb-sZ-hw2">
+                    <rect key="frame" x="521" y="34" width="57" height="30"/>
+                    <state key="normal" title="Animate">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapAnimate:" destination="-1" eventType="touchUpInside" id="z51-i8-pDO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1Jq-r5-hYR" firstAttribute="top" secondItem="Awb-sZ-hw2" secondAttribute="bottom" constant="8" symbolic="YES" id="IQG-Is-ksV"/>
+                <constraint firstAttribute="trailingMargin" secondItem="Awb-sZ-hw2" secondAttribute="trailing" constant="14" id="M4t-7k-m4D"/>
+                <constraint firstItem="Awb-sZ-hw2" firstAttribute="top" secondItem="t4W-6e-zqc" secondAttribute="top" constant="34" id="QeH-HX-ckW"/>
+                <constraint firstAttribute="trailing" secondItem="1Jq-r5-hYR" secondAttribute="trailing" id="SB9-sA-PV3"/>
+                <constraint firstItem="1Jq-r5-hYR" firstAttribute="leading" secondItem="t4W-6e-zqc" secondAttribute="leading" id="ma4-lc-AZQ"/>
+                <constraint firstAttribute="bottom" secondItem="1Jq-r5-hYR" secondAttribute="bottom" id="z4o-kB-HXX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
