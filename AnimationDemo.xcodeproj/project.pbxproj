@@ -15,13 +15,25 @@
 		5A3D3B6E1A7DCB0A0032923C /* Specs-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = 5A3D3B6D1A7DCB0A0032923C /* Specs-Prefix.pch */; };
 		5A3D3B701A7DCB0B0032923C /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A3D3B6F1A7DCB0B0032923C /* Cedar-iOS.framework */; };
 		5A3D3B721A7DCB0B0032923C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A3D3B711A7DCB0B0032923C /* Default-568h@2x.png */; };
-		5A3D3B741A7DCB0B0032923C /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5A3D3B731A7DCB0B0032923C /* ExampleSpec.mm */; };
+		5A3D3B7A1A7DCB950032923C /* BooksViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5A3D3B791A7DCB950032923C /* BooksViewControllerSpec.mm */; };
+		5A3D3B7C1A7DCBA20032923C /* MenuViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5A3D3B7B1A7DCBA20032923C /* MenuViewControllerSpec.mm */; };
+		5A3D3B7D1A7DCD0B0032923C /* BooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB59381A7D91D4004C066F /* BooksViewController.m */; };
+		5A3D3B7E1A7DCD110032923C /* BookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB593D1A7D95AB004C066F /* BookCell.m */; };
+		5A3D3B7F1A7DCD140032923C /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6FE1571A7D8EE700FA739B /* MenuViewController.m */; };
+		5A3D3B801A7DCD200032923C /* SimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A56727F1A7B5C8C00BC24ED /* SimpleViewController.m */; };
+		5A3D3B811A7DCD520032923C /* SimpleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A647D6F1A7D873B00AB9136 /* SimpleViewController.xib */; };
+		5A3D3B821A7DCD710032923C /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AAB593E1A7D95AB004C066F /* BookCell.xib */; };
+		5A3D3B831A7DCD750032923C /* BooksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AAB59391A7D91D4004C066F /* BooksViewController.xib */; };
+		5A3D3B841A7DCD770032923C /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A6FE1581A7D8EE700FA739B /* MenuViewController.xib */; };
+		5A3D3B851A7DCDF40032923C /* vertical_bookshelf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AE780FD1A7D97CC00310B15 /* vertical_bookshelf.jpg */; };
+		5A3D3B861A7DCF460032923C /* UIView+Fold.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE781001A7DB26500310B15 /* UIView+Fold.m */; };
+		5A3D3B871A7DD6D20032923C /* fire_photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AE781021A7DC67D00310B15 /* fire_photo.jpg */; };
 		5A56727A1A7B5C8C00BC24ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5672791A7B5C8C00BC24ED /* main.m */; };
 		5A56727D1A7B5C8C00BC24ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A56727C1A7B5C8C00BC24ED /* AppDelegate.m */; };
-		5A5672801A7B5C8C00BC24ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A56727F1A7B5C8C00BC24ED /* ViewController.m */; };
+		5A5672801A7B5C8C00BC24ED /* SimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A56727F1A7B5C8C00BC24ED /* SimpleViewController.m */; };
 		5A5672851A7B5C8C00BC24ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A5672841A7B5C8C00BC24ED /* Images.xcassets */; };
 		5A5672881A7B5C8C00BC24ED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A5672861A7B5C8C00BC24ED /* LaunchScreen.xib */; };
-		5A647D701A7D873B00AB9136 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A647D6F1A7D873B00AB9136 /* ViewController.xib */; };
+		5A647D701A7D873B00AB9136 /* SimpleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A647D6F1A7D873B00AB9136 /* SimpleViewController.xib */; };
 		5A6FE1591A7D8EE700FA739B /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6FE1571A7D8EE700FA739B /* MenuViewController.m */; };
 		5A6FE15A1A7D8EE700FA739B /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A6FE1581A7D8EE700FA739B /* MenuViewController.xib */; };
 		5AAB593A1A7D91D4004C066F /* BooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB59381A7D91D4004C066F /* BooksViewController.m */; };
@@ -45,17 +57,18 @@
 		5A3D3B6D1A7DCB0A0032923C /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
 		5A3D3B6F1A7DCB0B0032923C /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
 		5A3D3B711A7DCB0B0032923C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		5A3D3B731A7DCB0B0032923C /* ExampleSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
+		5A3D3B791A7DCB950032923C /* BooksViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BooksViewControllerSpec.mm; sourceTree = "<group>"; };
+		5A3D3B7B1A7DCBA20032923C /* MenuViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MenuViewControllerSpec.mm; sourceTree = "<group>"; };
 		5A5672741A7B5C8C00BC24ED /* AnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A5672781A7B5C8C00BC24ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A5672791A7B5C8C00BC24ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5A56727B1A7B5C8C00BC24ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5A56727C1A7B5C8C00BC24ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5A56727E1A7B5C8C00BC24ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5A56727F1A7B5C8C00BC24ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5A56727E1A7B5C8C00BC24ED /* SimpleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleViewController.h; sourceTree = "<group>"; };
+		5A56727F1A7B5C8C00BC24ED /* SimpleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleViewController.m; sourceTree = "<group>"; };
 		5A5672841A7B5C8C00BC24ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5A5672871A7B5C8C00BC24ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		5A647D6F1A7D873B00AB9136 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		5A647D6F1A7D873B00AB9136 /* SimpleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleViewController.xib; sourceTree = "<group>"; };
 		5A6FE1561A7D8EE700FA739B /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		5A6FE1571A7D8EE700FA739B /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		5A6FE1581A7D8EE700FA739B /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
@@ -68,7 +81,7 @@
 		5AE780FD1A7D97CC00310B15 /* vertical_bookshelf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vertical_bookshelf.jpg; sourceTree = "<group>"; };
 		5AE780FF1A7DB26500310B15 /* UIView+Fold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Fold.h"; path = "AnimationDemo/UIView+Fold.h"; sourceTree = "<group>"; };
 		5AE781001A7DB26500310B15 /* UIView+Fold.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Fold.m"; path = "AnimationDemo/UIView+Fold.m"; sourceTree = "<group>"; };
-		5AE781021A7DC67D00310B15 /* fire_photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fire_photo.jpg; sourceTree = "<group>"; };
+		5AE781021A7DC67D00310B15 /* fire_photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fire_photo.jpg; path = ../fire_photo.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +124,9 @@
 				5A3D3B6D1A7DCB0A0032923C /* Specs-Prefix.pch */,
 				5A3D3B6F1A7DCB0B0032923C /* Cedar-iOS.framework */,
 				5A3D3B711A7DCB0B0032923C /* Default-568h@2x.png */,
-				5A3D3B731A7DCB0B0032923C /* ExampleSpec.mm */,
 				5A3D3B661A7DCB0A0032923C /* Supporting Files */,
+				5A3D3B791A7DCB950032923C /* BooksViewControllerSpec.mm */,
+				5A3D3B7B1A7DCBA20032923C /* MenuViewControllerSpec.mm */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -129,7 +143,6 @@
 		5A56726B1A7B5C8C00BC24ED = {
 			isa = PBXGroup;
 			children = (
-				5AE781021A7DC67D00310B15 /* fire_photo.jpg */,
 				5AE780FF1A7DB26500310B15 /* UIView+Fold.h */,
 				5AE781001A7DB26500310B15 /* UIView+Fold.m */,
 				5A5672761A7B5C8C00BC24ED /* AnimationDemo */,
@@ -152,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				5AE780FD1A7D97CC00310B15 /* vertical_bookshelf.jpg */,
+				5AE781021A7DC67D00310B15 /* fire_photo.jpg */,
 				5A56727B1A7B5C8C00BC24ED /* AppDelegate.h */,
 				5A56727C1A7B5C8C00BC24ED /* AppDelegate.m */,
 				5A5672841A7B5C8C00BC24ED /* Images.xcassets */,
@@ -160,9 +174,9 @@
 				5A6FE1571A7D8EE700FA739B /* MenuViewController.m */,
 				5A6FE1581A7D8EE700FA739B /* MenuViewController.xib */,
 				5A5672771A7B5C8C00BC24ED /* Supporting Files */,
-				5A56727E1A7B5C8C00BC24ED /* ViewController.h */,
-				5A56727F1A7B5C8C00BC24ED /* ViewController.m */,
-				5A647D6F1A7D873B00AB9136 /* ViewController.xib */,
+				5A56727E1A7B5C8C00BC24ED /* SimpleViewController.h */,
+				5A56727F1A7B5C8C00BC24ED /* SimpleViewController.m */,
+				5A647D6F1A7D873B00AB9136 /* SimpleViewController.xib */,
 				5AAB593C1A7D95AB004C066F /* BookCell.h */,
 				5AAB593D1A7D95AB004C066F /* BookCell.m */,
 				5AAB593E1A7D95AB004C066F /* BookCell.xib */,
@@ -261,8 +275,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A3D3B6E1A7DCB0A0032923C /* Specs-Prefix.pch in Resources */,
+				5A3D3B821A7DCD710032923C /* BookCell.xib in Resources */,
 				5A3D3B6C1A7DCB0A0032923C /* Specs-Info.plist in Resources */,
+				5A3D3B851A7DCDF40032923C /* vertical_bookshelf.jpg in Resources */,
+				5A3D3B811A7DCD520032923C /* SimpleViewController.xib in Resources */,
 				5A3D3B721A7DCB0B0032923C /* Default-568h@2x.png in Resources */,
+				5A3D3B841A7DCD770032923C /* MenuViewController.xib in Resources */,
+				5A3D3B831A7DCD750032923C /* BooksViewController.xib in Resources */,
+				5A3D3B871A7DD6D20032923C /* fire_photo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A647D701A7D873B00AB9136 /* ViewController.xib in Resources */,
+				5A647D701A7D873B00AB9136 /* SimpleViewController.xib in Resources */,
 				5A5672881A7B5C8C00BC24ED /* LaunchScreen.xib in Resources */,
 				5A6FE15A1A7D8EE700FA739B /* MenuViewController.xib in Resources */,
 				5AE780FE1A7D97CC00310B15 /* vertical_bookshelf.jpg in Resources */,
@@ -288,8 +308,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A3D3B7C1A7DCBA20032923C /* MenuViewControllerSpec.mm in Sources */,
+				5A3D3B7D1A7DCD0B0032923C /* BooksViewController.m in Sources */,
+				5A3D3B801A7DCD200032923C /* SimpleViewController.m in Sources */,
 				5A3D3B6A1A7DCB0A0032923C /* main.m in Sources */,
-				5A3D3B741A7DCB0B0032923C /* ExampleSpec.mm in Sources */,
+				5A3D3B7F1A7DCD140032923C /* MenuViewController.m in Sources */,
+				5A3D3B861A7DCF460032923C /* UIView+Fold.m in Sources */,
+				5A3D3B7E1A7DCD110032923C /* BookCell.m in Sources */,
+				5A3D3B7A1A7DCB950032923C /* BooksViewControllerSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A5672801A7B5C8C00BC24ED /* ViewController.m in Sources */,
+				5A5672801A7B5C8C00BC24ED /* SimpleViewController.m in Sources */,
 				5AE781011A7DB26500310B15 /* UIView+Fold.m in Sources */,
 				5AAB593A1A7D91D4004C066F /* BooksViewController.m in Sources */,
 				5A56727D1A7B5C8C00BC24ED /* AppDelegate.m in Sources */,

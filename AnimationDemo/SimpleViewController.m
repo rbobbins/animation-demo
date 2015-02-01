@@ -6,21 +6,21 @@
 //  Copyright (c) 2015 Rachel Bobbins. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SimpleViewController.h"
 #import "UIView+Fold.h"
 
-@interface ViewController ()
+@interface SimpleViewController ()
 @property (weak, nonatomic) IBOutlet UIView *animationContainer;
 @property (strong) UIView *topHalfView;
 @property (strong) UIView *bottomHalfView;
 @end
 
-@implementation ViewController
+@implementation SimpleViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"Page Fold";
+    self.title = @"Simple View Fold";
 }
 
 - (IBAction)didTapAnimate:(id)sender {

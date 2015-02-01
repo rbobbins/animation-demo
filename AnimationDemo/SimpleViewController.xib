@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SimpleViewController">
             <connections>
                 <outlet property="animationContainer" destination="1Jq-r5-hYR" id="0ih-v1-s64"/>
                 <outlet property="view" destination="t4W-6e-zqc" id="KMW-cS-0Kc"/>

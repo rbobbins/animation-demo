@@ -23,16 +23,14 @@ static NSString * const kBookCellIdentifier = @"kBookCellIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UINib *cellNib = [UINib nibWithNibName:NSStringFromClass([BookCell class]) bundle:nil];
+    UINib *cellNib = [UINib nibWithNibName:NSStringFromClass([BookCell class])
+                                    bundle:nil];
     [self.tableView registerNib:cellNib
          forCellReuseIdentifier:kBookCellIdentifier];
     self.expandedIndexPaths = [NSMutableSet set];
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 50.f;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+    self.title = @"Foldable UITableViewCells";
 }
 
 #pragma mark - UITableViewDataSource

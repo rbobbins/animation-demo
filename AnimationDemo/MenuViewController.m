@@ -7,7 +7,7 @@
 //
 
 #import "MenuViewController.h"
-#import "ViewController.h"
+#import "SimpleViewController.h"
 #import "BooksViewController.h"
 
 @interface MenuViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -40,10 +40,10 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellIdentifier"];
     switch (indexPath.row) {
         case 0:
-            cell.textLabel.text = @"Page Fold";
+            cell.textLabel.text = @"Simple View Fold";
             break;
         case 1:
-            cell.textLabel.text = @"Cell Fold";
+            cell.textLabel.text = @"Foldable UITableViewCells";
         default:
             break;
     }
@@ -58,11 +58,11 @@
     
     UIViewController *viewController;
     if (indexPath.row == 0) {
-        viewController = [[ViewController alloc] init];
+        viewController = [[SimpleViewController alloc] init];
     } else if (indexPath.row == 1) {
         viewController = [[BooksViewController alloc] init];
     }
-    [self.navigationController pushViewController:viewController animated:YES];
+    [self.navigationController pushViewController:viewController animated:NO];
 
 }
 @end

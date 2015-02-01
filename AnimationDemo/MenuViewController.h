@@ -10,4 +10,6 @@
 
 @interface MenuViewController : UIViewController
 
+@property (nonatomic, weak, readonly) UITableView *tableView;
+
 @end

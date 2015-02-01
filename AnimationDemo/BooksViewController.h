@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface BooksViewController : UIViewController
-
+@property (nonatomic, weak, readonly) UITableView *tableView;
 @end
