@@ -22,6 +22,7 @@
 		5AAB593F1A7D95AB004C066F /* BookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB593D1A7D95AB004C066F /* BookCell.m */; };
 		5AAB59401A7D95AB004C066F /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AAB593E1A7D95AB004C066F /* BookCell.xib */; };
 		5AE780FE1A7D97CC00310B15 /* vertical_bookshelf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AE780FD1A7D97CC00310B15 /* vertical_bookshelf.jpg */; };
+		5AE781011A7DB26500310B15 /* UIView+Fold.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE781001A7DB26500310B15 /* UIView+Fold.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		5AAB593D1A7D95AB004C066F /* BookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookCell.m; sourceTree = "<group>"; };
 		5AAB593E1A7D95AB004C066F /* BookCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
 		5AE780FD1A7D97CC00310B15 /* vertical_bookshelf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vertical_bookshelf.jpg; sourceTree = "<group>"; };
+		5AE780FF1A7DB26500310B15 /* UIView+Fold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Fold.h"; path = "AnimationDemo/UIView+Fold.h"; sourceTree = "<group>"; };
+		5AE781001A7DB26500310B15 /* UIView+Fold.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Fold.m"; path = "AnimationDemo/UIView+Fold.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 		5A56726B1A7B5C8C00BC24ED = {
 			isa = PBXGroup;
 			children = (
+				5AE780FF1A7DB26500310B15 /* UIView+Fold.h */,
+				5AE781001A7DB26500310B15 /* UIView+Fold.m */,
 				5A5672761A7B5C8C00BC24ED /* AnimationDemo */,
 				5A5672901A7B5C8C00BC24ED /* AnimationDemoTests */,
 				5A5672751A7B5C8C00BC24ED /* Products */,
@@ -255,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A5672801A7B5C8C00BC24ED /* ViewController.m in Sources */,
+				5AE781011A7DB26500310B15 /* UIView+Fold.m in Sources */,
 				5AAB593A1A7D91D4004C066F /* BooksViewController.m in Sources */,
 				5A56727D1A7B5C8C00BC24ED /* AppDelegate.m in Sources */,
 				5A56727A1A7B5C8C00BC24ED /* main.m in Sources */,

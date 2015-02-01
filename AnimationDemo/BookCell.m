@@ -7,17 +7,54 @@
 //
 
 #import "BookCell.h"
+#import "UIView+Fold.h"
+@interface BookCell ()
+@property (weak, nonatomic) IBOutlet UIView *titleContainer;
+
+@end
 
 @implementation BookCell
 
 - (void)awakeFromNib {
-    // Initialization code
+    [super awakeFromNib];
+    self.withDetails = NO;
+    self.backgroundView = nil;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
 }
+
+- (void)setWithDetails:(BOOL)withDetails {
+    _withDetails = withDetails;
+    
+    if (withDetails) {
+        self.detailContainerViewHeightConstraint.constant = 0;
+        self.detailContainerViewHeightConstraint.priority = 250;
+    } else {
+        self.detailContainerViewHeightConstraint.constant = 0;
+        self.detailContainerViewHeightConstraint.priority = 999;
+    }
+}
+
+- (void)animateOpen {
+    UIColor *originalBackgroundColor = self.contentView.backgroundColor;
+    self.contentView.backgroundColor = [UIColor clearColor];
+    [self.detailContainerView foldOpenWithTransparency:YES
+                                   withCompletionBlock:^{
+        self.contentView.backgroundColor = originalBackgroundColor;
+    }];
+}
+
+- (void)animateClosed {
+    UIColor *originalBackgroundColor = self.contentView.backgroundColor;
+    self.contentView.backgroundColor = [UIColor clearColor];
+
+    [self.detailContainerView foldClosedWithTransparency:YES withCompletionBlock:^{
+        self.contentView.backgroundColor = originalBackgroundColor;
+    }];
+}
+
+
 
 @end

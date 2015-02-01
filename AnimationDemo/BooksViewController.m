@@ -15,6 +15,7 @@ static NSString * const kBookCellIdentifier = @"kBookCellIdentifier";
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSDictionary *bookDescriptions;
 @property (strong, nonatomic) NSArray *bookTitles;
+@property (strong, nonatomic) NSMutableSet *expandedIndexPaths;
 @end
 
 @implementation BooksViewController
@@ -25,6 +26,9 @@ static NSString * const kBookCellIdentifier = @"kBookCellIdentifier";
     UINib *cellNib = [UINib nibWithNibName:NSStringFromClass([BookCell class]) bundle:nil];
     [self.tableView registerNib:cellNib
          forCellReuseIdentifier:kBookCellIdentifier];
+    self.expandedIndexPaths = [NSMutableSet set];
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 50.f;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,18 +41,33 @@ static NSString * const kBookCellIdentifier = @"kBookCellIdentifier";
     return self.bookTitles.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     BookCell *cell = (id)[tableView dequeueReusableCellWithIdentifier:kBookCellIdentifier];
-    cell.bookTitleLabel.text = self.bookTitles[indexPath.row];
-    cell.backgroundView = nil;
-    cell.backgroundColor = [UIColor clearColor];
+    NSString *bookTitle = self.bookTitles[indexPath.row];
+    cell.bookTitleLabel.text = bookTitle;
+    cell.bookDescriptionLabel.text = self.bookDescriptions[bookTitle];
+    cell.withDetails = [self.expandedIndexPaths containsObject:indexPath];
     return cell;
 }
 
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"================> %@", indexPath);
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    if ([self.expandedIndexPaths containsObject:indexPath]) {
+        BookCell *cell = (id)[tableView cellForRowAtIndexPath:indexPath];
+        [cell animateClosed];
+        [self.expandedIndexPaths removeObject:indexPath];
+        [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+    } else {
+        [self.expandedIndexPaths addObject:indexPath];
+        [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+
+        BookCell *cell = (id)[tableView cellForRowAtIndexPath:indexPath];
+        [cell animateOpen];
+    }
 }
 
 #pragma mark - Private
