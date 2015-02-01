@@ -86,13 +86,17 @@ typedef NS_ENUM(NSInteger, FoldDirection) {
     
     [CATransaction begin];
     [CATransaction setAnimationDuration:0.3];
+    
     [CATransaction setCompletionBlock:^{
         self.backgroundColor = originalBackgroundColor;
-        [animationContainer removeFromSuperview];
         
-        for (UIView *subview in self.subviews) {
-            subview.hidden = NO;
+        if (withTransparency) {
+            for (UIView *subview in self.subviews) {
+                subview.hidden = NO;
+            }
         }
+        
+        [animationContainer removeFromSuperview];
         
         if (completionBlock) {
             completionBlock();
@@ -132,15 +136,16 @@ typedef NS_ENUM(NSInteger, FoldDirection) {
         case FoldDirectionOpen:
             bottomTranslationAnimation.fromValue = @(CGRectGetMinY(topHalfView.frame));
             bottomTranslationAnimation.toValue = @(2 * bottomHalfView.frame.size.height);
+            bottomTranslationAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
             break;
         case FoldDirectionClosed:
             bottomTranslationAnimation.fromValue = @(2 * bottomHalfView.frame.size.height);
             bottomTranslationAnimation.toValue = @(CGRectGetMinY(topHalfView.frame));
+            bottomTranslationAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
     }
     bottomTranslationAnimation.fillMode = kCAFillModeForwards;
     
     //TODO: figure out a more precise timing function
-    bottomTranslationAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];;
     [bottomHalfView.layer addAnimation:bottomTranslationAnimation forKey:nil];
     
     
