@@ -30,6 +30,8 @@ static NSString * const kBookCellIdentifier = @"kBookCellIdentifier";
     self.expandedIndexPaths = [NSMutableSet set];
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 50.f;
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+
     self.title = @"Foldable UITableViewCells";
 }
 
