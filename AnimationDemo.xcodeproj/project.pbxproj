@@ -81,7 +81,7 @@
 		5AE780FD1A7D97CC00310B15 /* vertical_bookshelf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vertical_bookshelf.jpg; sourceTree = "<group>"; };
 		5AE780FF1A7DB26500310B15 /* UIView+Fold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Fold.h"; path = "AnimationDemo/UIView+Fold.h"; sourceTree = "<group>"; };
 		5AE781001A7DB26500310B15 /* UIView+Fold.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Fold.m"; path = "AnimationDemo/UIView+Fold.m"; sourceTree = "<group>"; };
-		5AE781021A7DC67D00310B15 /* fire_photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fire_photo.jpg; path = ../fire_photo.jpg; sourceTree = "<group>"; };
+		5AE781021A7DC67D00310B15 /* fire_photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fire_photo.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
