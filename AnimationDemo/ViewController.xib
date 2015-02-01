@@ -22,12 +22,22 @@
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fire_photo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iOP-7F-61G">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="490"/>
                         </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap &quot;Animate&quot; to see the photo unfold!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lar-de-G5z">
+                            <rect key="frame" x="20" y="60" width="560" height="21"/>
+                            <color key="backgroundColor" red="0.93172554350000003" green="0.93172554350000003" blue="0.93172554350000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="iOP-7F-61G" firstAttribute="top" secondItem="1Jq-r5-hYR" secondAttribute="top" id="5S6-5H-Voc"/>
                         <constraint firstItem="iOP-7F-61G" firstAttribute="leading" secondItem="1Jq-r5-hYR" secondAttribute="leading" id="CB8-RO-Gnl"/>
+                        <constraint firstItem="Lar-de-G5z" firstAttribute="leading" secondItem="1Jq-r5-hYR" secondAttribute="leading" constant="20" symbolic="YES" id="dRG-UI-KDQ"/>
+                        <constraint firstAttribute="trailing" secondItem="Lar-de-G5z" secondAttribute="trailing" constant="20" symbolic="YES" id="u5h-Ds-d6R"/>
                         <constraint firstAttribute="bottom" secondItem="iOP-7F-61G" secondAttribute="bottom" id="ugr-qx-sNB"/>
+                        <constraint firstItem="Lar-de-G5z" firstAttribute="top" secondItem="1Jq-r5-hYR" secondAttribute="top" constant="60" id="xNE-lD-Fnk"/>
                         <constraint firstAttribute="trailing" secondItem="iOP-7F-61G" secondAttribute="trailing" id="xSZ-gg-I7f"/>
                     </constraints>
                 </view>
