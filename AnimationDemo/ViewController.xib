@@ -18,9 +18,20 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Jq-r5-hYR" userLabel="Animation Container">
                     <rect key="frame" x="0.0" y="46" width="600" height="490"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fire_photo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iOP-7F-61G">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="490"/>
+                        </imageView>
+                    </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="iOP-7F-61G" firstAttribute="top" secondItem="1Jq-r5-hYR" secondAttribute="top" id="5S6-5H-Voc"/>
+                        <constraint firstItem="iOP-7F-61G" firstAttribute="leading" secondItem="1Jq-r5-hYR" secondAttribute="leading" id="CB8-RO-Gnl"/>
+                        <constraint firstAttribute="bottom" secondItem="iOP-7F-61G" secondAttribute="bottom" id="ugr-qx-sNB"/>
+                        <constraint firstAttribute="trailing" secondItem="iOP-7F-61G" secondAttribute="trailing" id="xSZ-gg-I7f"/>
+                    </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awb-sZ-hw2">
+                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awb-sZ-hw2">
                     <rect key="frame" x="521" y="8" width="57" height="30"/>
                     <state key="normal" title="Animate">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -42,4 +53,7 @@
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
         </view>
     </objects>
+    <resources>
+        <image name="fire_photo.jpg" width="3200" height="2368"/>
+    </resources>
 </document>
