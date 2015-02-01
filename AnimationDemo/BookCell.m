@@ -10,7 +10,7 @@
 #import "UIView+Fold.h"
 @interface BookCell ()
 @property (weak, nonatomic) IBOutlet UIView *titleContainer;
-
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *detailContainerViewHeightConstraint;
 @end
 
 @implementation BookCell

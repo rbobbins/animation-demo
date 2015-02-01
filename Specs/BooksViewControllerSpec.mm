@@ -20,9 +20,16 @@ describe(@"BooksViewController", ^{
         subject.tableView.visibleCells.count should equal(5);
     });
     
+    it(@"should initially not show details for any book", ^{
+        [subject.tableView layoutIfNeeded];
+        for (BookCell *cell in subject.tableView.visibleCells) {
+            cell.detailContainerView.frame.size.height should be_close_to(0.f);
+        }
+    });
+    
     describe(@"tapping on a cell", ^{
         __block NSIndexPath *indexPath;
-        __block UITableViewCell *openCell;
+        __block BookCell *openCell;
         __block UITableViewCell *originalCell;
         
         beforeEach(^{
@@ -38,7 +45,7 @@ describe(@"BooksViewController", ^{
             [subject.tableView.delegate tableView:subject.tableView
                           didSelectRowAtIndexPath:indexPath];
             
-            openCell = [subject.tableView cellForRowAtIndexPath:indexPath];
+            openCell = (id)[subject.tableView cellForRowAtIndexPath:indexPath];
         });
         
         it(@"should reload the cell", ^{
@@ -52,8 +59,12 @@ describe(@"BooksViewController", ^{
             openCell.frame.size.height should be_greater_than(originalCell.frame.size.height);
         });
         
+        it(@"should expand the details on the cell", ^{
+            openCell.detailContainerView.frame.size.height should be_greater_than(0);
+        });
+        
         describe(@"tapping the cell again", ^{
-            __block UITableViewCell *closedCell;
+            __block BookCell *closedCell;
             
             beforeEach(^{
                 spy_on(openCell);
@@ -64,14 +75,14 @@ describe(@"BooksViewController", ^{
                 [subject.tableView.delegate tableView:subject.tableView
                               didSelectRowAtIndexPath:indexPath];
                 
-                closedCell = [subject.tableView cellForRowAtIndexPath:indexPath];
+                closedCell = (id)[subject.tableView cellForRowAtIndexPath:indexPath];
             });
             
             
             it(@"should animate the old cell closed", ^{
                 openCell should have_received(@selector(animateClosed));
                 closedCell.frame.size.height should be_less_than(openCell.frame.size.height);
-                
+                closedCell.detailContainerView.frame.size.height should be_close_to(0.f);
             });
             
             it(@"should reload the cell", ^{
