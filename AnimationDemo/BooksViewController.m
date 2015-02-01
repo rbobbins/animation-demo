@@ -83,8 +83,8 @@ static NSString * const kBookCellIdentifier = @"kBookCellIdentifier";
     if (!_bookDescriptions) {
        _bookDescriptions = @{
           @"Harry Potter and the Deathly Hallows": @"The final book in the Harry Potter series.",
-          @"The Blind Assasin": @"The Blind Assassin opens with these simple, resonant words: \"Ten days after the war ended, my sister Laura drove a car off a bridge.\" They are spoken by Iris, whose terse account of her sister's death in 1945 is followed by an inquest report proclaiming the death accidental. ",
-          @"Special Topics in Calamity Physics": @"At the center of Special Topics in Calamity Physics is clever, deadpan Blue van Meer, who has a head full of literary, philosophical, scientific, and cinematic knowledge. But she could use some friends. Upon entering the elite St. Gallway School, she finds some—a clique of eccentrics known as the Bluebloods. One drowning and one hanging later, Blue finds herself puzzling out a byzantine murder mystery. ",
+          @"A Tale of Two Cities": @"It was the best of times, when Mr. Dickens loved rhymes.",
+          @"A Tree Grows in Brooklyn": @"Also, a young author grows up in Brooklyn.",
           @"Moby Dick" : @"This book is a whale of a good time!",
           @"Great Gatsby" : @"The book that inspired thousands of obliviously themed parties!",
           };
