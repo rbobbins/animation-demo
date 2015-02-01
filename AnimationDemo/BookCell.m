@@ -19,6 +19,7 @@
     [super awakeFromNib];
     self.withDetails = NO;
     self.backgroundView = nil;
+    self.detailContainerViewHeightConstraint.constant = 0;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -29,10 +30,8 @@
     _withDetails = withDetails;
     
     if (withDetails) {
-        self.detailContainerViewHeightConstraint.constant = 0;
         self.detailContainerViewHeightConstraint.priority = 250;
     } else {
-        self.detailContainerViewHeightConstraint.constant = 0;
         self.detailContainerViewHeightConstraint.priority = 999;
     }
 }
