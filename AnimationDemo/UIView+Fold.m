@@ -35,6 +35,7 @@ typedef NS_ENUM(NSInteger, FoldDirection) {
 - (void)foldWithTransparency:(BOOL)withTransparency
              completionBlock:(void (^)(void))completionBlock
                  inDirection:(FoldDirection)foldDirection{
+    
     [self prepareSplitImage];
     
     NSArray *topAndBottomView = [self prepareSplitImage];
