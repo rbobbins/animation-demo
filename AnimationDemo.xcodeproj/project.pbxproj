@@ -26,7 +26,6 @@
 		5A3D3B831A7DCD750032923C /* BooksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AAB59391A7D91D4004C066F /* BooksViewController.xib */; };
 		5A3D3B841A7DCD770032923C /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A6FE1581A7D8EE700FA739B /* MenuViewController.xib */; };
 		5A3D3B851A7DCDF40032923C /* vertical_bookshelf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AE780FD1A7D97CC00310B15 /* vertical_bookshelf.jpg */; };
-		5A3D3B861A7DCF460032923C /* UIView+Fold.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE781001A7DB26500310B15 /* UIView+Fold.m */; };
 		5A3D3B871A7DD6D20032923C /* fire_photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AE781021A7DC67D00310B15 /* fire_photo.jpg */; };
 		5A56727A1A7B5C8C00BC24ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5672791A7B5C8C00BC24ED /* main.m */; };
 		5A56727D1A7B5C8C00BC24ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A56727C1A7B5C8C00BC24ED /* AppDelegate.m */; };
@@ -41,9 +40,25 @@
 		5AAB593F1A7D95AB004C066F /* BookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB593D1A7D95AB004C066F /* BookCell.m */; };
 		5AAB59401A7D95AB004C066F /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AAB593E1A7D95AB004C066F /* BookCell.xib */; };
 		5AE780FE1A7D97CC00310B15 /* vertical_bookshelf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AE780FD1A7D97CC00310B15 /* vertical_bookshelf.jpg */; };
-		5AE781011A7DB26500310B15 /* UIView+Fold.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE781001A7DB26500310B15 /* UIView+Fold.m */; };
 		5AE781031A7DC67D00310B15 /* fire_photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AE781021A7DC67D00310B15 /* fire_photo.jpg */; };
+		AEB98BA81A7FF1F90042A8D4 /* SuperFold.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEB98BA71A7FF1F90042A8D4 /* SuperFold.h */; };
+		AEB98BBF1A7FF6320042A8D4 /* UIView+Fold.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB98BBE1A7FF6320042A8D4 /* UIView+Fold.m */; };
+		AEB98BC01A7FF6320042A8D4 /* UIView+Fold.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB98BBE1A7FF6320042A8D4 /* UIView+Fold.m */; };
+		AEB98BC11A7FF6320042A8D4 /* UIView+Fold.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB98BBE1A7FF6320042A8D4 /* UIView+Fold.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AEB98BA31A7FF1F90042A8D4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				AEB98BA81A7FF1F90042A8D4 /* SuperFold.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5A3D3B5D1A7DCB0A0032923C /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,9 +94,11 @@
 		5AAB593D1A7D95AB004C066F /* BookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookCell.m; sourceTree = "<group>"; };
 		5AAB593E1A7D95AB004C066F /* BookCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
 		5AE780FD1A7D97CC00310B15 /* vertical_bookshelf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vertical_bookshelf.jpg; sourceTree = "<group>"; };
-		5AE780FF1A7DB26500310B15 /* UIView+Fold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Fold.h"; path = "AnimationDemo/UIView+Fold.h"; sourceTree = "<group>"; };
-		5AE781001A7DB26500310B15 /* UIView+Fold.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Fold.m"; path = "AnimationDemo/UIView+Fold.m"; sourceTree = "<group>"; };
 		5AE781021A7DC67D00310B15 /* fire_photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fire_photo.jpg; sourceTree = "<group>"; };
+		AEB98BA51A7FF1F90042A8D4 /* libSuperFold.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSuperFold.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEB98BA71A7FF1F90042A8D4 /* SuperFold.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperFold.h; sourceTree = "<group>"; };
+		AEB98BBD1A7FF6320042A8D4 /* UIView+Fold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Fold.h"; sourceTree = "<group>"; };
+		AEB98BBE1A7FF6320042A8D4 /* UIView+Fold.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Fold.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +114,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5A5672711A7B5C8C00BC24ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEB98BA21A7FF1F90042A8D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -143,10 +167,9 @@
 		5A56726B1A7B5C8C00BC24ED = {
 			isa = PBXGroup;
 			children = (
-				5AE780FF1A7DB26500310B15 /* UIView+Fold.h */,
-				5AE781001A7DB26500310B15 /* UIView+Fold.m */,
 				5A5672761A7B5C8C00BC24ED /* AnimationDemo */,
 				5A3D3B651A7DCB0A0032923C /* Specs */,
+				AEB98BA61A7FF1F90042A8D4 /* SuperFold */,
 				5A3D3B5E1A7DCB0A0032923C /* Frameworks */,
 				5A5672751A7B5C8C00BC24ED /* Products */,
 			);
@@ -157,6 +180,7 @@
 			children = (
 				5A5672741A7B5C8C00BC24ED /* AnimationDemo.app */,
 				5A3D3B5D1A7DCB0A0032923C /* Specs.app */,
+				AEB98BA51A7FF1F90042A8D4 /* libSuperFold.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,6 +220,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AEB98BA61A7FF1F90042A8D4 /* SuperFold */ = {
+			isa = PBXGroup;
+			children = (
+				AEB98BBD1A7FF6320042A8D4 /* UIView+Fold.h */,
+				AEB98BBE1A7FF6320042A8D4 /* UIView+Fold.m */,
+				AEB98BA71A7FF1F90042A8D4 /* SuperFold.h */,
+			);
+			path = SuperFold;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -233,6 +267,23 @@
 			productReference = 5A5672741A7B5C8C00BC24ED /* AnimationDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AEB98BA41A7FF1F90042A8D4 /* SuperFold */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEB98BBA1A7FF1FA0042A8D4 /* Build configuration list for PBXNativeTarget "SuperFold" */;
+			buildPhases = (
+				AEB98BA11A7FF1F90042A8D4 /* Sources */,
+				AEB98BA21A7FF1F90042A8D4 /* Frameworks */,
+				AEB98BA31A7FF1F90042A8D4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuperFold;
+			productName = SuperFold;
+			productReference = AEB98BA51A7FF1F90042A8D4 /* libSuperFold.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -246,6 +297,9 @@
 						CreatedOnToolsVersion = 6.1;
 					};
 					5A5672731A7B5C8C00BC24ED = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					AEB98BA41A7FF1F90042A8D4 = {
 						CreatedOnToolsVersion = 6.1;
 					};
 				};
@@ -265,6 +319,7 @@
 			targets = (
 				5A5672731A7B5C8C00BC24ED /* AnimationDemo */,
 				5A3D3B5C1A7DCB0A0032923C /* Specs */,
+				AEB98BA41A7FF1F90042A8D4 /* SuperFold */,
 			);
 		};
 /* End PBXProject section */
@@ -309,11 +364,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A3D3B7C1A7DCBA20032923C /* MenuViewControllerSpec.mm in Sources */,
+				AEB98BC01A7FF6320042A8D4 /* UIView+Fold.m in Sources */,
 				5A3D3B7D1A7DCD0B0032923C /* BooksViewController.m in Sources */,
 				5A3D3B801A7DCD200032923C /* SimpleViewController.m in Sources */,
 				5A3D3B6A1A7DCB0A0032923C /* main.m in Sources */,
 				5A3D3B7F1A7DCD140032923C /* MenuViewController.m in Sources */,
-				5A3D3B861A7DCF460032923C /* UIView+Fold.m in Sources */,
 				5A3D3B7E1A7DCD110032923C /* BookCell.m in Sources */,
 				5A3D3B7A1A7DCB950032923C /* BooksViewControllerSpec.mm in Sources */,
 			);
@@ -324,12 +379,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A5672801A7B5C8C00BC24ED /* SimpleViewController.m in Sources */,
-				5AE781011A7DB26500310B15 /* UIView+Fold.m in Sources */,
+				AEB98BBF1A7FF6320042A8D4 /* UIView+Fold.m in Sources */,
 				5AAB593A1A7D91D4004C066F /* BooksViewController.m in Sources */,
 				5A56727D1A7B5C8C00BC24ED /* AppDelegate.m in Sources */,
 				5A56727A1A7B5C8C00BC24ED /* main.m in Sources */,
 				5AAB593F1A7D95AB004C066F /* BookCell.m in Sources */,
 				5A6FE1591A7D8EE700FA739B /* MenuViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEB98BA11A7FF1F90042A8D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEB98BC11A7FF6320042A8D4 /* UIView+Fold.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +553,28 @@
 			};
 			name = Release;
 		};
+		AEB98BB61A7FF1FA0042A8D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AEB98BB71A7FF1FA0042A8D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -500,6 +585,7 @@
 				5A3D3B761A7DCB0B0032923C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A56726F1A7B5C8C00BC24ED /* Build configuration list for PBXProject "AnimationDemo" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +604,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		AEB98BBA1A7FF1FA0042A8D4 /* Build configuration list for PBXNativeTarget "SuperFold" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEB98BB61A7FF1FA0042A8D4 /* Debug */,
+				AEB98BB71A7FF1FA0042A8D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
