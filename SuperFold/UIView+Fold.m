@@ -106,6 +106,7 @@ typedef NS_ENUM(NSInteger, FoldDirection) {
     
     CABasicAnimation *topRotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.x"];
     topRotationAnimation.fillMode = kCAFillModeForwards;
+    topRotationAnimation.removedOnCompletion = NO;
     switch (foldDirection) {
         case FoldDirectionOpen:
             topRotationAnimation.fromValue = @(-M_PI_2);
@@ -120,6 +121,8 @@ typedef NS_ENUM(NSInteger, FoldDirection) {
     
     
     CABasicAnimation *bottomRotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.x"];
+    bottomRotationAnimation.fillMode = kCAFillModeForwards;
+    bottomRotationAnimation.removedOnCompletion = NO;
     switch (foldDirection) {
         case FoldDirectionOpen:
             bottomRotationAnimation.fromValue = @(M_PI_2);
@@ -129,10 +132,11 @@ typedef NS_ENUM(NSInteger, FoldDirection) {
             bottomRotationAnimation.fromValue = @(0);
             bottomRotationAnimation.toValue = @(M_PI_2);
     }
-    bottomRotationAnimation.fillMode = kCAFillModeForwards;
     [bottomHalfView.layer addAnimation:bottomRotationAnimation forKey:nil];
     
     CABasicAnimation *bottomTranslationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.translation.y"];
+    bottomTranslationAnimation.fillMode = kCAFillModeForwards;
+    bottomTranslationAnimation.removedOnCompletion = NO;
     switch (foldDirection) {
         case FoldDirectionOpen:
             bottomTranslationAnimation.fromValue = @(CGRectGetMinY(topHalfView.frame));
@@ -144,7 +148,6 @@ typedef NS_ENUM(NSInteger, FoldDirection) {
             bottomTranslationAnimation.toValue = @(CGRectGetMinY(topHalfView.frame));
             bottomTranslationAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
     }
-    bottomTranslationAnimation.fillMode = kCAFillModeForwards;
     
     //TODO: figure out a more precise timing function
     [bottomHalfView.layer addAnimation:bottomTranslationAnimation forKey:nil];
@@ -153,6 +156,8 @@ typedef NS_ENUM(NSInteger, FoldDirection) {
     CABasicAnimation *opacityAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
     opacityAnimation.fromValue = @(1.0);
     opacityAnimation.toValue = @(0.0);
+    opacityAnimation.fillMode = kCAFillModeForwards;
+    opacityAnimation.removedOnCompletion = NO;
     [topShadowLayer addAnimation:opacityAnimation forKey:nil];
     [bottomShadowLayer addAnimation:opacityAnimation forKey:nil];
     
