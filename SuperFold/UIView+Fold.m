@@ -177,7 +177,7 @@ typedef NS_ENUM(NSInteger, FoldDirection) {
 
     UIImage *topHalf;
     UIImage *bottomHalf;
-#ifdef IS_SPECS_TARGET
+#if IS_SPECS_TARGET
 #else
     UIGraphicsBeginImageContext(self.frame.size);
 
