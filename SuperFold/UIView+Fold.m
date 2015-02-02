@@ -165,29 +165,36 @@ typedef NS_ENUM(NSInteger, FoldDirection) {
 }
 
 - (NSArray *)prepareSplitImage {
-    UIGraphicsBeginImageContext(self.frame.size);
-    
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    [self.layer renderInContext:context];
-    UIImage *fullViewImage = UIGraphicsGetImageFromCurrentImageContext();
-    
     CGRect topImageFrame = CGRectMake(0,
                                       0,
                                       self.frame.size.width,
                                       floorf(self.frame.size.height / 2.f));
-    CGImageRef imageRef = CGImageCreateWithImageInRect(fullViewImage.CGImage, topImageFrame);
-    UIImage *topHalf = [UIImage imageWithCGImage:imageRef];
-    
+
     CGRect bottomImageFrame = CGRectMake(0,
                                          CGRectGetMaxY(topImageFrame),
                                          self.frame.size.width,
                                          ceilf(self.frame.size.height / 2));
+
+    UIImage *topHalf;
+    UIImage *bottomHalf;
+#ifdef IS_SPECS_TARGET
+#else
+    UIGraphicsBeginImageContext(self.frame.size);
+
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [self.layer renderInContext:context];
+    UIImage *fullViewImage = UIGraphicsGetImageFromCurrentImageContext();
     
+    CGImageRef imageRef = CGImageCreateWithImageInRect(fullViewImage.CGImage, topImageFrame);
+    topHalf = [UIImage imageWithCGImage:imageRef];
+
     imageRef = CGImageCreateWithImageInRect(fullViewImage.CGImage, bottomImageFrame);
-    UIImage *bottomHalf = [UIImage imageWithCGImage:imageRef];
+    bottomHalf = [UIImage imageWithCGImage:imageRef];
     CGImageRelease(imageRef);
+
     UIGraphicsEndImageContext();
-    
+#endif
+
     UIImageView *topHalfView = [[UIImageView alloc] initWithImage:topHalf];
     topHalfView.frame = topImageFrame;
     
