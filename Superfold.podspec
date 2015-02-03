@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SuperFold"
-  s.version      = "1.0.3"
+  s.version      = "1.1.3"
   s.summary      = "A clever category for folding and unfolding UIViews"
   s.homepage     = "https://github.com/rbobbins/animation-demo"
   s.author             = { "Rachel Bobbins" => "rachelheidi@gmail.com" }
