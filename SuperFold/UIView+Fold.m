@@ -182,10 +182,6 @@ typedef NS_ENUM(NSInteger, FoldDirection) {
                                          self.frame.size.width,
                                          ceilf(self.frame.size.height / 2));
 
-    UIImage *topHalf;
-    UIImage *bottomHalf;
-#if IS_SPECS_TARGET
-#else
     UIGraphicsBeginImageContext(self.frame.size);
 
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -193,14 +189,13 @@ typedef NS_ENUM(NSInteger, FoldDirection) {
     UIImage *fullViewImage = UIGraphicsGetImageFromCurrentImageContext();
     
     CGImageRef imageRef = CGImageCreateWithImageInRect(fullViewImage.CGImage, topImageFrame);
-    topHalf = [UIImage imageWithCGImage:imageRef];
+    UIImage *topHalf = [UIImage imageWithCGImage:imageRef];
 
     imageRef = CGImageCreateWithImageInRect(fullViewImage.CGImage, bottomImageFrame);
-    bottomHalf = [UIImage imageWithCGImage:imageRef];
+    UIImage *bottomHalf = [UIImage imageWithCGImage:imageRef];
     CGImageRelease(imageRef);
 
     UIGraphicsEndImageContext();
-#endif
 
     UIImageView *topHalfView = [[UIImageView alloc] initWithImage:topHalf];
     topHalfView.frame = topImageFrame;
