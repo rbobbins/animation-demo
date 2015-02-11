@@ -190,6 +190,7 @@ typedef NS_ENUM(NSInteger, FoldDirection) {
     
     CGImageRef imageRef = CGImageCreateWithImageInRect(fullViewImage.CGImage, topImageFrame);
     UIImage *topHalf = [UIImage imageWithCGImage:imageRef];
+    CGImageRelease(imageRef);
 
     imageRef = CGImageCreateWithImageInRect(fullViewImage.CGImage, bottomImageFrame);
     UIImage *bottomHalf = [UIImage imageWithCGImage:imageRef];
